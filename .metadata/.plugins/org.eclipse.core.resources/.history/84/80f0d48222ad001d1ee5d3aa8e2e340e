@@ -1,0 +1,5 @@
+package com.bhushan.model;
+
+public class Student {
+
+}

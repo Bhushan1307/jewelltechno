@@ -1,0 +1,13 @@
+package com.bhushan.MyApp;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	class.forName("com.mysql.cj.jdbc")
+    }
+}

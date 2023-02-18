@@ -1,0 +1,14 @@
+package com.bhushan;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+
+public class Employee {
+	@Id
+	int id;
+	String name;
+	String address;
+	
+	
+}

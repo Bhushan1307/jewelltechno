@@ -1,0 +1,13 @@
+package com.bhushan.model;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Student {
+	@Id
+	private int rollNo;
+	private String name;
+	private int mobile;
+	
+	
+}

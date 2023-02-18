@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+		<form action="search	">
+		<label>Enter Your Name:- </label>
+		<input type="text" name="q"> 		
+		<input type="submit">
+		</form>	
+		
+		<h1>${data}</h1>
+</body>
+</html>

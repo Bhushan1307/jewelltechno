@@ -1,0 +1,46 @@
+package com.bhushan;
+
+import java.sql.Time;
+import java.util.Date;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	Configuration cfg = new Configuration().configure().addAnnotatedClass(Employee.class);
+    	
+    	SessionFactory sf =	cfg.buildSessionFactory();
+    	
+    	Session session = sf.openSession();
+    	
+    	session.beginTransaction();
+    	
+    	Employee emp = new Employee();
+    	
+    	emp.setName("Sham");
+    	emp.setAddress("akurdi");
+    	emp.setGender("Male");
+    	emp.setDob(new Date());
+    	emp.setPunch_in(new Time(0));
+    	String name = emp.getName();
+    	
+    	Employee emp1 = new Employee();
+    	
+    	emp.setName("Ram");
+    	emp.setAddress("Moshi");
+    	emp.setGender("Male");
+    	emp.setDob(new Date());
+    	emp.setPunch_in(new Time(0));
+    	String name = emp.getName();
+    	
+    	session.save(emp);
+    	
+        	
+    	session.getTransaction().commit();
+    	
+    }
+}

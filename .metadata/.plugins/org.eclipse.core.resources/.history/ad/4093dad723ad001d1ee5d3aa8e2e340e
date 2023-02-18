@@ -1,0 +1,9 @@
+package com.bhushan.model;
+
+@Entity
+public class Address {
+	@Id
+	private int id;
+	private String city;
+	private int pinNo;
+}

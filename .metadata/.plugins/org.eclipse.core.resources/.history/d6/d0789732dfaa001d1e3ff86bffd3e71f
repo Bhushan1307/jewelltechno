@@ -1,0 +1,31 @@
+package com.bhushan;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	Configuration cfg = new Configuration().configure().addAnnotatedClass(Employee.class);
+    	
+    	SessionFactory sf =	cfg.buildSessionFactory();
+    	
+    	Session session = sf.openSession();
+    	
+    	session.beginTransaction();
+    	
+    	Employee emp = new Employee();
+    	emp.setId(2);
+    	emp.setName("Don");
+    	emp.setAddress("Dhule");
+    	
+    	//session.save(emp);
+    	Employee empData =	session.get(Employee.class, 2);
+    	
+    	System.out.println(empData.toString());
+        	
+    	session.getTransaction().commit();
+    }
+}

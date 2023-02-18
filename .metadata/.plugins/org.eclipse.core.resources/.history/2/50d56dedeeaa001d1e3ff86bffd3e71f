@@ -1,0 +1,10 @@
+package com.bhushan;
+
+public class Employee {
+	@Id
+	int id;
+	String name;
+	String address;
+	
+	
+}

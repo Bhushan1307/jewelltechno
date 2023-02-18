@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+C:\Users\patil\Documents\workspace-sts-3.9.12.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1636219128.index
+\flipkart\src\main\resources
+C:\Users\patil\Documents\workspace-sts-3.9.12.RELEASE\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1433520846.index
+\db-web-app\src\main\resources

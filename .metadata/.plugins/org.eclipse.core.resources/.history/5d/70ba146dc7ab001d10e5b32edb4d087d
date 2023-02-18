@@ -1,0 +1,22 @@
+package flipkart;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class Sample extends HttpServlet {
+	
+	public void m1() {
+		System.out.println("I am java file");
+	}
+	
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+	        throws ServletException, IOException
+	    {
+	        
+	    }
+	
+}

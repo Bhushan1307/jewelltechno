@@ -1,0 +1,15 @@
+package com.bhushan;
+
+import javax.security.auth.login.Configuration;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	new Configuration().configure().addAnnotatedClss(annotatedClass)
+    }
+}
